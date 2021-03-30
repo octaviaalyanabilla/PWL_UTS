@@ -1,33 +1,28 @@
-@extends('mahasiswas.layout')
+@extends('barang.layout')
 @section('content')
 <div class="containermt-5">
 <div class="row justify-content-center align-items-center">
 <div class="card"style="width:24rem;">
-	<div class="card-header">Detail mahasiswa</div>
+	<div class="card-header">Detail barang</div>
 <div class="card-body">
 <ul class="list-grouplist-group-flush">
 <li class="list-group-item">
-<b>Nim:</b>{{$mahasiswa->nim}}</li>
+<b>Id Barang:</b>{{$barang->id_barang}}</li>
 <li class="list-group-item">
-<b>Nama:</b>{{$mahasiswa->nama}}</li>
+<b>Kode Barang:</b>{{$barang->kode_barang}}</li>
 <li class="list-group-item">
-<b>Kelas:</b>{{$mahasiswa->kelas}}</li
+<b>Nama Barang:</b>{{$barang->nama_barang}}</li
 ><li class="list-group-item"
-><b>Jurusan:</b>{{$mahasiswa->jurusan}}</li>
+><b>Kategori Barang:</b>{{$barang->kategori_barang}}</li>
 <li class="list-group-item">
-<b>No_Handphone:</b>{{$mahasiswa->no_handphone}}
+<b>Harga:</b>{{$barang->harga}}
 </li>
-><b>Email:</b>{{$mahasiswa->jurusan}}</li>
+><b>Qty:</b>{{$barang->qty}}</li>
 <li class="list-group-item">
-<b>No_Handphone:</b>{{$mahasiswa->no_handphone}}
-</li>
-><b>Tgl Lahir:</b>{{$mahasiswa->tanggal_lahir}}</li>
-<li class="list-group-item">
-<b>Email:</b>{{$mahasiswa->email}}
 </li>
 </ul>
 </div>
-<a class="btn btn-success mt-3"href="{{route('mahasiswa.index')}}">
+<a class="btn btn-success mt-3"href="{{route('barang.index')}}">
 Kembali
 </a>
 </div>

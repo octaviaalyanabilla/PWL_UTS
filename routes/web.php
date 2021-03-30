@@ -18,3 +18,4 @@ Route::get('/', function () {
 });
 
 Route::resource('barang', BarangController::class);
+Route::get('delete/{id}',[BarangController::class,'destroy']);
